@@ -21,7 +21,7 @@ const PORT = Number(process.env.PORT)
 connectDB(); // Call the database connection function
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'http://localhost:5174'], // ✅ Allow multiple frontends
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://frontend-codelab.vercel.app',], // ✅ Allow multiple frontends
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,  // ✅ Allow cookies
   allowedHeaders: ['Content-Type', 'Authorization'],  // ✅ Allow specific headers
